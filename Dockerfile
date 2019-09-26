@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
 EXPOSE 8888
 ADD environment.yml /
 RUN conda update -n base conda -y && conda env update && \
